@@ -1,0 +1,51 @@
+/*primeiras propriedades:*/
+* {
+    /*define a área de margem nos quatro lador do elemento*/
+    margin: 10px;
+    /*distância entre o conteúdo de um elemento e suas bordas*/
+    padding: 0;
+    /*para configurar uma ou mais das propriedades de contorno*/
+    outline: 0;
+    justify-content: center;
+    align-items: center;
+
+}
+
+body {
+    /*definindo a fonte de todo o nosso body*/
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    justify-content: space-around;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.container{
+    margin: 200px;
+    padding: 0;
+    outline: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{border: transparent;
+    border-radius: 20px;
+    color: #3b7355;
+}
+
+.icon{
+    margin: 100px;
+    color: #3b7355;
+    font-size: 100px;
+}
+
+@media screen and(max-width:1000px) {
+    body {
+        width: 100%;
+        flex-direction: column;
+    }
+}

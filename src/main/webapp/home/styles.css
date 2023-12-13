@@ -1,0 +1,243 @@
+/*primeiras propriedades:*/
+* {
+    /*define a área de margem nos quatro lador do elemento*/
+    margin: 0;
+    /*distância entre o conteúdo de um elemento e suas bordas*/
+    padding: 0;
+    /*para configurar uma ou mais das propriedades de contorno*/
+    outline: 0;
+
+
+}
+
+body {
+    /*definindo a fonte de todo o nosso body*/
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+
+.logo {
+    display: flex;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    top: 5px;
+    left: 40px;
+}
+
+.logo2 {
+    margin-right: 20px;
+    margin-left: 30px;
+    margin-top: 100px;
+    border: 2px solid #3b7355;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+
+}
+
+
+li {
+    /*retirando as bolinhas das nossas listas*/
+    list-style: none;
+}
+
+.header-menu {
+    /*torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens*/
+    display: flex;
+    position: fixed;
+    /*deixa o nosso header fixo*/
+    width: 100%;
+    /*largura*/
+    padding: 20px;
+    /*espaçamento dos 4 lados*/
+    padding-bottom: 32px;
+    /*espaçamento inferior*/
+    padding-top: 32px;
+    /*espaçamento superior*/
+    height: 5px;
+    background-color: #3b7355;
+
+}
+
+.header-menu nav {
+    /*elemento no html que aponta*/
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.lista-menu {
+    display: flex;
+    justify-content: space-evenly;
+    /*espaçamento entre eles seja igual*/
+    width: 50%;
+    align-items: center;
+    padding-right: 50px;
+}
+
+/*pegando os itens com tag a de dentro da nossa lista*/
+.lista-menu li>a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: inherit;
+    padding-right: 10px;
+}
+
+.btn {
+
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #b4d2c2;
+    border: transparent;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transition: 1s;
+    background-color: #d68749;
+    border: transparent;
+}
+
+.criador {
+    margin-top: 0;
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.criador2 {
+    margin-top: 130px;
+    margin-left: 20px;
+}
+
+.clique {
+    margin-left: 20px;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #b4d2c2;
+    border: transparent;
+    cursor: pointer;
+}
+
+.clique:hover {
+    transition: 1s;
+    background-color: #d68749;
+    border: transparent;
+}
+
+
+/*o container é um componente do Bootstrap que garante que o seu layout vai ficar alinhado corretamente na página.
+  ele pode definir as margens laterais da página, ou deixar sem margens e, também, posiciona o conteúdo no
+  centro do browser. O container é invisível.*/
+.container {
+    margin-right: auto;
+    /*uma margem automática para todos os lados*/
+    margin-left: auto;
+    /**/
+    max-width: 960px;
+    /*largura máxima*/
+    padding-right: 10px;
+    /*espaçamento direito*/
+    padding-left: 10px;
+    /*espaçamento esquerdo*/
+    width: 100%;
+    /*largura*/
+}
+
+
+
+.subcontainer-principal {
+    /*torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens*/
+    display: flex;
+    /*deixa o nosso header fixo*/
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.lista-item ul li {
+    margin-bottom: 32px;
+    /*espaçamento entre os itens da nossa lista*/
+}
+
+.footer {
+    background-color: #3b7355;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.lista-footer li {
+    color: #ffff;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.subcontainer-secundario {
+    width: 70%;
+    height: 50%;
+    border: 2px solid black;
+    display: flex;
+
+}
+
+.box {
+    align-items: center;
+    border: 2px solid #3b7355;
+    width: 90%;
+    margin: 10px;
+    height: 58vh;
+    border-radius: 25px;
+    margin-left: 50px;
+    object-fit: cover;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    object-fit: cover;
+    /* Mantém a proporção da imagem e a ajusta para cobrir a caixa */
+}
+
+
+
+.email {
+    color: #fff;
+}
+
+.number {
+    color: #fff;
+}
+
+.site {
+    color: #fff;
+}
+
+@media screen and(max-width:768px) {
+    body {
+        width: 70%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .subcontainer-principal {
+        flex-direction: column;
+    }
+
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Gestão de Eventos</title>
+        <link
+            rel="shortcut icon"
+            href="./imgs/Vertical-Colorida.png"
+            type="Image/x-icon" />
+    </head>
+
+    <body>
+        <!--CORPO DO NOSSO SITE-->
+        <div class="container right-panel-active">
+            <!-- Sign Up -->
+            <div class="container__form container--signup">
+                <form onsubmit="submitForm()" class="form" id="form1">
+                    <h2 class="form__title"><strong>Cadastre-se Já!</strong></h2>
+
+                    <label for="name"><strong>Nome:</strong></label>
+                    <input
+                        id="name"
+                        type="text"
+                        placeholder="Nome"
+                        class="inputs required" />
+
+                    <label for="senha"><strong>Senha:</strong></label>
+                    <input
+                        id="senha"
+                        type="password"
+                        placeholder="Senha"
+                        class="inputs required" />
+
+                    <label for="email"><strong>Email:</strong></label>
+                    <input
+                        id="email"
+                        type="email"
+                        placeholder="Email"
+                        class="inputs required" />
+
+                    <label for="aniversario"><strong>Idade:</strong></label>
+                    <input
+                        id="idade"
+                        type="number"
+                        placeholder="Idade"
+                        class="inputs required" />
+
+                    <button class="btn" type="submit">
+                        <strong>Cadastrar-me</strong>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Sign In -->
+            <div class="container__form container--signin">
+                <form onsubmit="submitForm2()" class="form" id="form2">
+                    <h2 class="form__title"><strong>Entrar</strong></h2>
+
+                    <label for="nome"><strong>Nome:</strong></label>
+                    <input
+                        id="name2"
+                        type="text"
+                        placeholder="Nome"
+                        class="inputs required" />
+
+                    <label for="senha"><strong>Senha:</strong></label>
+                    <input
+                        id="senha2"
+                        type="password"
+                        placeholder="Senha"
+                        class="inputs required" />
+
+                    <a href="#" class="link"><strong>Esqueceu sua senha?</strong>
+                    </a>
+                    <button class="btn" type="submit">
+                        <strong>Entrar</strong>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Overlay -->
+            <div class="container__overlay">
+                <div class="overlay">
+                    <div class="overlay__panel overlay--left">
+                        <button class="btn" id="signIn">Entrar</button>
+                    </div>
+                    <div class="overlay__panel overlay--right">
+                        <button class="btn" id="signUp">Cadastrar-me</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
